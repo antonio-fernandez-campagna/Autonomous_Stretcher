@@ -94,14 +94,14 @@ roslaunch <package> <file>
 
 This is the Hardware Scheme we planned via [fritzing](https://fritzing.org/) within the 100€ budged. 
 
-[Hardware Scheme](https://github.com/ninofdz/Autonomous_Stretcher/images/hardware_scheme.png)
+[Hardware Scheme](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hardware_scheme.png)
 
 
 ## 3D piece
 
 Remember that the purpose of the project is make able an existing stretcher to be autonomous, so this is just the STL model of a stretcher adding a structure at the bottom for de hardware part (battery, arduiino motherboard and actuators). 
 
-[Stretcher](https://github.com/ninofdz/Autonomous_Stretcher/images/as.gif)
+[Stretcher](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/as.gif)
  
 
 ## Software architecure diagram
@@ -109,7 +109,7 @@ Remember that the purpose of the project is make able an existing stretcher to b
 The diagram of the software scheme consists on sending the orders to the corresponding stretcher via wifi, this activates the **A star  algorithm global path planner module**, (In order to make faster the path planning rute nd more efficient route construction to get you off site as quickly as possible we also developed a _RRT_ algorith planner but not integrated with _ROS_). Afterwards, the stretcher will move following the glboal planner, in case it encounters an obstacle using the built-in sensors, the **local path planner** module will act, which consists of a **Dynamic Window Approach**, once the object or person is avoided, the stretcher will return to the route indicated by the global path planner until it reaches the destination.
 
 
-[Software architecture](https://github.com/ninofdz/Autonomous_Stretcher/images/software_architecture.png)
+[Software architecture](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/software_architecture.png)
 
 
 ## ROS modules
@@ -119,15 +119,15 @@ The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a ma
 
 Quick video of the mapping process: 
 
-[Mapping process](https://github.com/ninofdz/Autonomous_Stretcher/images/mapping_process.gif)
+[Mapping process](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/mapping_process.gif)
 
 This is the result we got: 
 
-[Generated map pgm](https://github.com/ninofdz/Autonomous_Stretcher/images/hospital_2d.png)
+[Generated map pgm](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d.png)
 
 due to the map it was not created perfect and the route planner was going through walls or trying to find routes outside the hospital, we have applied knowledge of ***mathematical morphology*** learned in computer vision to create the following map in [_MATLAB_](https://matlab.mathworks.com/):
 
-[Refined map pgm](https://github.com/ninofdz/Autonomous_Stretcher/images/hospital_2d_refined.png)
+[Refined map pgm](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d_refined.png)
 
 ### A* algorithm
 
@@ -135,7 +135,7 @@ The **A*** algorithm included in the ROS package is used as a **global path plan
 
 Example from [AtsushiSakai](https://github.com/AtsushiSakai/PythonRobotics#a-algorithm) of how it works: 
 
-[A star](https://github.com/ninofdz/Autonomous_Stretcher/images/a_start.gif)
+[A star](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/a_star.gif)
 
 ### Dynamic Window Approach
 
@@ -143,7 +143,7 @@ The **DWA** algorithm included in the ROS package is used as a local path planne
 
 Example from [AtsushiSakai](https://github.com/AtsushiSakai/PythonRobotics#dynamic-window-approach) of how it works: 
 
-[DWA](https://github.com/ninofdz/Autonomous_Stretcher/images/dwa.gif)
+[DWA](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/dwa.gif)
 
 
 ## RRT 
@@ -158,13 +158,13 @@ todo: aqui insertar gif
 
 Using Gazebo and rviz , we can see in how by determining a goal destination it creates a route and follows the path: 
 
-[2D simulation](https://github.com/ninofdz/Autonomous_Stretcher/images/as_route_example.gif)
+[2D simulation](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/as_route_example.gif)
 
 
 ### Simulation of DWA 
 We can see how putting one objects on the scene, first the global plalaner makes a route trough the objects but once the sensors detects them it dodges them using the local planner:
 
-[3D Scheme](https://github.com/ninofdz/Autonomous_Stretcher/images/as_dodging.gif)
+[3D Scheme](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/as_dodging.gif)
 
 ## Video
 
