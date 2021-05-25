@@ -109,8 +109,7 @@ Remember that the purpose of the project is make able an existing stretcher to b
 The diagram of the software scheme consists on sending the orders to the corresponding stretcher via wifi, this activates the **A star  algorithm global path planner module**, (In order to make faster the path planning rute nd more efficient route construction to get you off site as quickly as possible we also developed a _RRT_ algorith planner but not integrated with _ROS_). Afterwards, the stretcher will move following the glboal planner, in case it encounters an obstacle using the built-in sensors, the **local path planner** module will act, which consists of a **Dynamic Window Approach**, once the object or person is avoided, the stretcher will return to the route indicated by the global path planner until it reaches the destination.
 
 
-![Software architecture](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/software_architecture.png)
-<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/software_architecture.png" width="300">
+<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/software_architecture.png" width="600">
 
 
 
@@ -125,11 +124,13 @@ Quick video of the mapping process:
 
 This is the result we got: 
 
-![Generated map pgm](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d.png)
+<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d.png" width="700">
+
 
 due to the map it was not created perfect and the route planner was going through walls or trying to find routes outside the hospital, we have applied knowledge of ***mathematical morphology*** learned in computer vision to create the following map in [_MATLAB_](https://matlab.mathworks.com/):
 
-![Refined map pgm](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d_refined.png)
+<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d_refined.png" width="700">
+
 
 ### A* algorithm
 
