@@ -1,0 +1,2 @@
+map_provider:turtlebot3:turtlebot3_bringup:turtlebot3_description:turtlebot3_example:turtlebot3_navigation:turtlebot3_slam:turtlebot3_teleop
+-DCATKIN_DEVEL_PREFIX=/home/enri/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/enri/catkin_ws/install -G Unix Makefiles
