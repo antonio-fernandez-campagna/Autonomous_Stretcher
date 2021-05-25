@@ -29,7 +29,7 @@ An autonomous Stretcher for hospitals or enclosure closed to remotely send a str
 
 This is a project created in our third year of Computer Engineering with a major in Computer Science at the Autonomous University of Barcelona for the subject _Robotics, Language and Planning_.
 
-We have a budget of € 100 to create a robot that doesn't exist. Due of coronavirus, we have not been able to implement it in reality. Consequently, we have created a robot using [**ROS**](https://www.ros.org/about-ros//), [**Gazebo**](http://gazebosim.org/) and [**rviz**](http://wiki.ros.org/rviz) for the simulation part and [**Fritzing**](https://fritzing.org/) for the hardware scheme. 
+We had a budget of 100€ to create a robot that doesn't exist. Due of coronavirus, we have not been able to implement it in reality. Consequently, we have created a robot using [**ROS**](https://www.ros.org/about-ros//), [**Gazebo**](http://gazebosim.org/) and [**rviz**](http://wiki.ros.org/rviz) for the simulation part and [**Fritzing**](https://fritzing.org/) for the hardware scheme. 
 
 Enjoy it!
 
