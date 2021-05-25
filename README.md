@@ -110,6 +110,8 @@ The diagram of the software scheme consists on sending the orders to the corresp
 
 
 ![Software architecture](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/software_architecture.png)
+<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/software_architecture.png" width="300">
+
 
 
 ## ROS modules
