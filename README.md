@@ -35,7 +35,7 @@ Enjoy it!
 
 ## Description
 
-The project aims to make able any autonomous stretcher move autonomously on a hospital from point A to point B avoiding obstacles in real-time.
+The project aims to make able any stretcher move autonomously on a hospital from point A to point B avoiding obstacles in real-time.
 
 So, just changing some components of the stretcher will become an autonomous stretcher!
 
