@@ -154,7 +154,11 @@ Example from [AtsushiSakai](https://github.com/AtsushiSakai/PythonRobotics#dynam
 We created but not implemeted a **RRT** algorith in _MATLAB_ to perfom the global path planner. 
 
 Example of path obtained:
+
 <img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rrt_matlab.png" width="600">
+
+![rqt](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rqt_graph.gif)
+
 
 
 ## Simulation
