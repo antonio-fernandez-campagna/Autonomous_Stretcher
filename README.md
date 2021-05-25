@@ -1,6 +1,6 @@
 # Autonomous Stretcher
 
-An autonomous Stretcher for hospitals or enclosure closed to remotely send a stretcher from point A to point B. Based on ROS and simulated on Gazebo
+An autonomous Stretcher for hospitals or enclosure closed to remotely send a stretcher from point A to point B. Based on ROS and simulated on Gazebo.
 
 
 # Table of contents
@@ -65,7 +65,9 @@ In order to simulate the robot, you will need you need a working version of ROS.
     
 ## Instalation guide
 
-With the intention of facilitating the installation, we have created a step-by-step pdf file. (See it here todo: aqui añadir link). This is a brief introduction. 
+With the intention of facilitating the installation, we have created a **step-by-step** [pdf file](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/instalation_guide.pdf).
+
+#### This is a brief introduction:
 
 If you don't have installed ROS yet, you can use this quick and easy guide from ROS official web page: 
 
