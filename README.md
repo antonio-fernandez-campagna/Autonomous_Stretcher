@@ -134,7 +134,7 @@ This is the result we got:
 <img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d.png" width="600">
 
 
-due to the map it was not created perfect and the route planner was going through walls or trying to find routes outside the hospital, we have applied knowledge of ***mathematical morphology*** learned in computer vision to create the following map in [_MATLAB_](https://matlab.mathworks.com/):
+due to the map it was not created perfect and the route planner was going through walls or trying to find routes outside the hospital, we have applied knowledge of ***morphological transformations*** learned in computer vision to create the following map in [_MATLAB_](https://matlab.mathworks.com/):
 
 <img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d_refined.png" width="600">
 
@@ -186,6 +186,6 @@ Larger video on youtube: [video](https://youtu.be/DAzql4cAIHs)
 
 Antonio Fernández Campagna [Github](https://github.com/ninofdz) [LinkedIn](https://www.linkedin.com/in/antoniofernandezcampagna/)
 
-Enrique Ruíz Akamache [Github](https://github.com/enriamak) [LinkedIn](https://www.linkedin.com/in/enriamak/)
+Enrique Ruíz Amakrache [Github](https://github.com/enriamak) [LinkedIn](https://www.linkedin.com/in/enriamak/)
 
 Sergio González Ariza [Github](https://github.com/gonza298) [LinkedIn](https://www.linkedin.com/in/sergio-gonz%C3%A1lez-ariza-ba4835165/)
