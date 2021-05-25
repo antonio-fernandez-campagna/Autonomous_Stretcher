@@ -52,7 +52,7 @@ First of all, the stretcher will need some modifications, these are the hardware
 - Wifi module
 - Ultrasound distance sensor
 - Camera
-
+- 4 Wheels
 
 ## Simulation requirements
 
