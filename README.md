@@ -94,7 +94,7 @@ roslaunch <package> <file>
 
 This is the Hardware Scheme we planned via [fritzing](https://fritzing.org/) within the 100€ budged. 
 
-[Hardware Scheme](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hardware_scheme.png)
+![Hardware Scheme](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hardware_scheme.png)
 
 
 ## 3D piece
