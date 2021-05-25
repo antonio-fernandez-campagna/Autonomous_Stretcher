@@ -178,7 +178,6 @@ We can see how putting some objects on the scene, the global planer makes a rout
 
 ## Video
 
-TODO: CAMBIAR LINK
 Larger video on youtube: [video](https://youtu.be/DAzql4cAIHs)
 
 ## Authors
