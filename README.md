@@ -13,6 +13,7 @@ An autonomous Stretcher for hospitals or enclosure closed to remotely send a str
 * [Hardware Scheme](#hardware-scheme)
 * [3D piece](#3d-piece)
 * [Software architecure diagram](#software-architecure-diagram)
+* [RQT Graph](#rqt-graph)
 * [ROS modules](#ros-modules)
     + [SLAM](#slam)
     + [A* algorithm](#a--algorithm)
@@ -111,7 +112,11 @@ The diagram of the software scheme consists on sending the orders to the corresp
 
 <img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/software_architecture.png" width="500">
 
+## RQT Graph
 
+Using the **ROS rqt graph** we have generated a graph that allows us to observe the nodes that are active and the connections between the editors and subscribers who are in charge of moving the base of our stretcher. These nodes are involved in the entire operation of our robot. We can see reflected in the graph, the sensors, events and actions of our robot, events of the ROS simulator itself and how they are all connected to each other. In green we have the route that is currently being followed, and therefore, the nodes that are being used.
+
+![rqt](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rtq_graph.png)
 
 ## ROS modules
 ### SLAM
@@ -156,9 +161,6 @@ We created but not implemeted a **RRT** algorith in _MATLAB_ to perfom the globa
 Example of path obtained:
 
 <img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rrt_matlab.png" width="600">
-
-![rqt](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rtq_graph.png)
-
 
 
 ## Simulation
