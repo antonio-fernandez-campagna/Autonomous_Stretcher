@@ -183,5 +183,7 @@ Larger video on youtube: [video](https://youtu.be/DAzql4cAIHs)
 ## Authors
 
 Antonio Fernández Campagna [Github](https://github.com/ninofdz) [LinkedIn](https://www.linkedin.com/in/antoniofernandezcampagna/)
+
 Enrique Ruíz Akamache [Github](https://github.com/enriamak) [LinkedIn](https://www.linkedin.com/in/enriamak/)
+
 Sergio González Ariza [Github](https://github.com/gonza298) [LinkedIn](https://www.linkedin.com/in/sergio-gonz%C3%A1lez-ariza-ba4835165/)
