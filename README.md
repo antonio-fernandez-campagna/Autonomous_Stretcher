@@ -2,52 +2,45 @@
 
 An autonomous for hospitals or enclosure closed to remotely send a stretcher from point A to point B. Based on ROS and simulated on Gazebo
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 # Table of contents
 
-[Autonomous Stretcher](#autonomous-stretcher)
-- [Table of contents](#table-of-contents)
-  * [What is this](#what-is-this)
-  * [Description](#description)
-  * [Robot hardware requerimets](#robot-hardware-requerimets)
-  * [Robot software requeriments](#robot-software-requeriments)
-  * [Simulation requeriments](#simulation-requeriments)
-  * [Instalation guide](#instalation-guide)
-  * [Hardware Scheme](#hardware-scheme)
-  * [3D piece](#3d-piece)
-  * [Software architecure diagram](#software-architecure-diagram)
-  * [ROS modules](#ros-modules)
+* [What is this?](#what-is-this?)
+* [Description](#description)
+* [Robot hardware requerimets](#robot-hardware-requerimets)
+* [Simulation requeriments](#simulation-requeriments)
+* [Instalation guide](#instalation-guide)
+* [Hardware Scheme](#hardware-scheme)
+* [3D piece](#3d-piece)
+* [Software architecure diagram](#software-architecure-diagram)
+* [ROS modules](#ros-modules)
     + [SLAM](#slam)
     + [A* algorithm](#a--algorithm)
     + [Dynamic Window Approach](#dynamic-window-approach)
-  * [RRT](#rrt)
-  * [Simulation](#simulation)
+* [RRT](#rrt)
+* [Simulation](#simulation)
     + [2D Simulation goal](#2d-simulation-goal)
     + [3D Simulation goal](#3d-simulation-goal)
-  * [Video](#video)
-  * [Authors](#authors)
+* [Video](#video)
+* [Authors](#authors)
 
-## What is this
+## What is this?
 
-This is a project created in our third year of computer engineering (major on comuputer science) at the Autonomous University of Barcelona for the subject of Robotics, Language and Planning.
+This is a project created in our third year of Computer Engineering with major on Comuputer Science at the Autonomous University of Barcelona for the subject _Robotics, Language and Planning_.
 
-We had a budget of € 100 to create a robot that doesn't exists. Due to the coronavirus we have not been able to implement it in reality.
+We have a budget of € 100 to create a robot that doesn't exists. Due to the coronavirus we have not been able to implement it in reality. Consequently, we have created a robot using [**ROS**](https://www.ros.org/about-ros//), [**Gazebo**](http://gazebosim.org/) and [**rviz**](http://wiki.ros.org/rviz) for the simulation part and [**Fritzing**](https://fritzing.org/) for the hardware scheme. 
 
-Enjoy!
+Enjoy it!
 
 ## Description
 
-The aim of the project is to make able any automous stretcher to move autonomously on a hospital from a point A to a point B avoiding obstacles.
+The aim of the project is to make able any automous stretcher to move autonomously on a hospital from a point A to a point B avoiding obstacles in real time.
 
-So, just changing some components to your stretcher it will become an autonous stretcher!
+So, just changing some components of the stretcher it will become an autonous stretcher!
 
 ## Robot hardware requerimets
 
-First of all, you will need to add some hardware parts your stretcher: 
-(Remember that we had a 100€ budget, so if you want more battery capacity or power you will need to do some changes).
+First of all, the stretcher will need some modifications, these are the hardware parts to make an stretcher autononous (Remember that we had a 100€ budget, so if you want more battery capacity or power you will need to do some changes): 
 
 - Shaft Hub 4mm
 - Arduino Uno
@@ -59,14 +52,10 @@ First of all, you will need to add some hardware parts your stretcher:
 - Ultrasound distance sensor
 - Camera
 
-## Robot software requeriments
-
-- ROS Kinetic
-- A 2d map.pgm of the environment
 
 ## Simulation requeriments
 
-In order to simulate the robot you will need these COMPONENTS!!!??: 
+In order to simulate the robot you will need You will need a working version of ROS. We have used and tested in ROS Kinetic Kame.  
 
 - Ubuntu 16.04 Xelenial version
     - ROS kinetic
@@ -75,63 +64,86 @@ In order to simulate the robot you will need these COMPONENTS!!!??:
     
 ## Instalation guide
 
-In order to facilitate the installation we have created a step-by-step pdf file. (See it here) todo: aqui añadir link
+In order to facilitate the installation we have created a step-by-step pdf file. (See it here todo: aqui añadir link). This is a brief introduction. 
 
-Once you have installed the ubuntu version we followed the ROS official web page: 
+If you don't have installed ROS yet, you can use this quick and easy guide from ROS official web page: 
 
 [Wiki ROS web page ](http://wiki.ros.org/ROS/Tutorials)
 
-After ROS you will need to install the turtlebot3 dependency package
+After ROS is intalled, you will need to install the turtlebot3 dependency package??? todo: revisar sin
 
-todo: aqui añadir instalcion
-bla bla bla 
-bla bla
-bla
+To import our folder, you have to create a **_catkin workspace_**, we named ```catkin_ws```, create the packages into ```src**``` and paste de content of the folders (**important**: don't copy the files). Now, you are able to do ```catkin_make``` on your catkin workspace.
+
+Lastly, import the folder ```_AS_robot_``` into ```~/model_editor_models``` and the folder ```_models_``` into ```~/.gazebo/models```. 
+
+Towards faciliate the command promt line, add these commands into your ```_~/.bashrc_``` file:
+
+```
+source ~/catkin_ws/devel/setup.bash 
+export TURTLEBOT3_MODEL=burger
+```
+
+Now you are able tu run all the packages as follow: 
+
+```
+roslaunch <package> <file>  
+```
+
 
 ## Hardware Scheme
 
 This is the Hardware Scheme we planned via [fritzing](https://fritzing.org/) within the 100€ budged. 
 
-todo: aqui añadir imagen
+[Hardware Scheme](https://github.com/ninofdz/Autonomous_Stretcher/images/hardware_scheme.png)
 
 
 ## 3D piece
 
-Remember that the purpose of the project is make able an existing stretcher to be autonomous, so this is just the .STL model why used for the simulation. You dont need extra parts!
+Remember that the purpose of the project is make able an existing stretcher to be autonomous, so this is just the STL model of a stretcher adding a structure at the bottom for de hardware part (battery, arduiino motherboard and actuators). 
 
-todo: añadir aqui gif de la camilla girando 
+[Stretcher](https://github.com/ninofdz/Autonomous_Stretcher/images/as.gif)
+ 
 
 ## Software architecure diagram
 
-The diagram of the software scheme consists on sending the orders to the corresponding stretcher via wifi, this activates the **A star  algorithm global path planner module**, (In order to make faster the path planning rute nd more efficient route construction to get you off site as quickly as possible we also developed a _RRT__ algorith planner but not integrated with _ROS_). Afterwards, the stretcher will move following the glboal planner, in case it encounters an obstacle using the built-in sensors, the **local path planner** module will act, which consists of a **Dynamic Window Approach**, once the object or person is avoided, the stretcher will return to the route indicated by the global path planner until it reaches the destination.
+The diagram of the software scheme consists on sending the orders to the corresponding stretcher via wifi, this activates the **A star  algorithm global path planner module**, (In order to make faster the path planning rute nd more efficient route construction to get you off site as quickly as possible we also developed a _RRT_ algorith planner but not integrated with _ROS_). Afterwards, the stretcher will move following the glboal planner, in case it encounters an obstacle using the built-in sensors, the **local path planner** module will act, which consists of a **Dynamic Window Approach**, once the object or person is avoided, the stretcher will return to the route indicated by the global path planner until it reaches the destination.
 
 
-todo: aqui insertar imagen
+[Software architecture](https://github.com/ninofdz/Autonomous_Stretcher/images/software_architecture.png)
+
 
 ## ROS modules
 ### SLAM
 
 The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. To make possible the path planner work, we need a 2D map to make possible calculate the route. That's why we used the [Turtlebot3 SLAM](https://emanual.robotis.com/docs/en/platform/turtlebot3/slam/) system to get a 2D map.
 
+Quick video of the mapping process: 
+
+[Mapping process](https://github.com/ninofdz/Autonomous_Stretcher/images/mapping_process.gif)
+
 This is the result we got: 
 
-todo: aqui insertar imagen
+[Generated map pgm](https://github.com/ninofdz/Autonomous_Stretcher/images/hospital_2d.png)
 
-due to the map it was not created perfect and the route planner was going through walls or trying to find routes outside the hospital, we have applied knowledge of ***mathematical morphology*** learned in computer vision to create the following map in _MATLAB_:
+due to the map it was not created perfect and the route planner was going through walls or trying to find routes outside the hospital, we have applied knowledge of ***mathematical morphology*** learned in computer vision to create the following map in [_MATLAB_](https://matlab.mathworks.com/):
 
-todo: aqui insertar imagen
+[Refined map pgm](https://github.com/ninofdz/Autonomous_Stretcher/images/hospital_2d_refined.png)
 
 ### A* algorithm
 
 The **A*** algorithm included in the ROS package is used as a **global path planner**, It conssists of finding routes plans starts from a map coordinate, which it interprets as a vertex of a graph, and begins to explore adjacent nodes until the destination node (map destination coordinate) is reached. This algorithm generally finds very low cost routes in a very short time.
 
-todo: insertar aqui gif del rviz dandole a 2D nav goal
+Example from [AtsushiSakai](https://github.com/AtsushiSakai/PythonRobotics#a-algorithm) of how it works: 
+
+[A star](https://github.com/ninofdz/Autonomous_Stretcher/images/a_start.gif)
 
 ### Dynamic Window Approach
 
 The **DWA** algorithm included in the ROS package is used as a local path planner, it takes into account the dynamic and kinematic limitations of the stretcher. After entering the global plan and cost map, the **local path planner** will generate commands that will be sent to the move base. The objective of this planner is to follow the path indicated by the global planner, penalizing when deviating from the route in order to also be able to avoid obstacles.
 
-todo: insertar aqui 2 gif en camara rapida de como sortea obstaculo (gazebo y rviz)
+Example from [AtsushiSakai](https://github.com/AtsushiSakai/PythonRobotics#dynamic-window-approach) of how it works: 
+
+[DWA](https://github.com/ninofdz/Autonomous_Stretcher/images/dwa.gif)
 
 
 ## RRT 
@@ -142,23 +154,26 @@ How it works:
 todo: aqui insertar gif
 
 ## Simulation
-### 2D Simulation goal 
+### 2D and 3D Simulation of route using Gazebo and rviz
 
-Using Rviz, we can see in 2D how by determining a goal destination it creates a route and follows the path: 
+Using Gazebo and rviz , we can see in how by determining a goal destination it creates a route and follows the path: 
 
-todo: aqui insertar gif entero 
+[2D simulation](https://github.com/ninofdz/Autonomous_Stretcher/images/as_route_example.gif)
 
 
-### 3D Simulation goal 
-Using Gazebo, we can see in 3D the stretcher moving autonomously on the hospital till it reaches the navigation goal.
+### Simulation of DWA 
+We can see how putting one objects on the scene, first the global plalaner makes a route trough the objects but once the sensors detects them it dodges them using the local planner:
 
-todo: aqui insertar simulacion 3d
+[3D Scheme](https://github.com/ninofdz/Autonomous_Stretcher/images/as_dodging.gif)
 
 ## Video
 
-
+TODO: CAMBIAR LINK
+Larger video on youtube: [video](https://youtu.be/XuYYfQu_9Eo)
 
 ## Authors
 
-
+Antonio Fernández Campagna [Github](https://github.com/ninofdz) [LinkedIn](https://www.linkedin.com/in/antoniofernandezcampagna/)
+Enrique Ruíz Akamache [Github](https://github.com/enriamak) [LinkedIn](https://www.linkedin.com/in/enriamak/)
+Sergio González Ariza [Github](https://github.com/gonza298) [LinkedIn](https://www.linkedin.com/in/sergio-gonz%C3%A1lez-ariza-ba4835165/)
 
