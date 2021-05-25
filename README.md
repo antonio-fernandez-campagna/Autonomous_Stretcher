@@ -157,7 +157,7 @@ Example of path obtained:
 
 <img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rrt_matlab.png" width="600">
 
-![rqt](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rqt_graph.gif)
+![rqt](https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rqt_graph.png)
 
 
 
