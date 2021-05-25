@@ -124,12 +124,12 @@ Quick video of the mapping process:
 
 This is the result we got: 
 
-<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d.png" width="700">
+<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d.png" width="600">
 
 
 due to the map it was not created perfect and the route planner was going through walls or trying to find routes outside the hospital, we have applied knowledge of ***mathematical morphology*** learned in computer vision to create the following map in [_MATLAB_](https://matlab.mathworks.com/):
 
-<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d_refined.png" width="700">
+<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/hospital_2d_refined.png" width="600">
 
 
 ### A* algorithm
@@ -172,7 +172,7 @@ We can see how putting one objects on the scene, first the global plalaner makes
 ## Video
 
 TODO: CAMBIAR LINK
-Larger video on youtube: [video](https://youtu.be/XuYYfQu_9Eo)
+Larger video on youtube: [video](https://youtu.be/DAzql4cAIHs)
 
 ## Authors
 
