@@ -152,9 +152,10 @@ Example from [AtsushiSakai](https://github.com/AtsushiSakai/PythonRobotics#dynam
 ## RRT 
 
 We created but not implemeted a **RRT** algorith in _MATLAB_ to perfom the global path planner. 
-How it works: 
 
-todo: aqui insertar gif
+Example of path obtained:
+<img src="https://github.com/ninofdz/Autonomous_Stretcher/blob/main/images/rrt_matlab.png" width="600">
+
 
 ## Simulation
 ### 2D and 3D Simulation of route using Gazebo and rviz
