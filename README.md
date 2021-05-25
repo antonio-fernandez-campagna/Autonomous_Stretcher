@@ -75,7 +75,7 @@ After ROS is installed, you will need to install the turtlebot3 dependency packa
 
 To import our folder, you have to create a **_catkin workspace_**, we named ```catkin_ws```, create the packages into ```src**``` and paste de content of the folders (**important**: don't copy the files). Now, you can do ```catkin_make``` on your catkin workspace.
 
-Lastly, import the folder ```_AS_robot_``` into ```~/model_editor_models``` and the folder ```_models_``` into ```~/.gazebo/models```. 
+Lastly, import the folder ```AS_robot``` into ```~/model_editor_models``` and the folder ```_models_``` into ```~/.gazebo/models```. 
 
 Towards facilitate the command prompt line, add these commands into your ```_~/.bashrc_``` file:
 
